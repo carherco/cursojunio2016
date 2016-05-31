@@ -82,7 +82,7 @@ Uso de las herramientas de desarrrollo de los navegadores.
 
 
 
-### 12_variaspaginas.php
+### 12_variaspaginas
 
 - include/require
 
@@ -96,11 +96,11 @@ el archivo llamado, desde ese punto en adelante.
 - Sesión
 
 
-### 21_depuracion.php
+### 21_depuracion
 
 Hay un error al hacer la resta.
 
-## Métodos de php para depuración:
+#### Métodos de php para depuración (21_depuracion/comparativa.php):
 - echo
 - print_r
 - var_dump

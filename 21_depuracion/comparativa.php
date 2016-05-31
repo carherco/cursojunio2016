@@ -67,6 +67,20 @@ include 'plantillas/cabecera.php';
     <div class="col-md-4"><pre><?php var_dump($var);?></pre></div>
 </div>
 
+<?php $var = 12.34;?>
+<div class="row">
+    <div class="col-md-4"><pre><?php echo $var;?></pre></div>
+    <div class="col-md-4"><pre><?php print_r($var);?></pre></div>
+    <div class="col-md-4"><pre><?php var_dump($var);?></pre></div>
+</div>
+
+<?php $var = "12.34";?>
+<div class="row">
+    <div class="col-md-4"><pre><?php echo $var;?></pre></div>
+    <div class="col-md-4"><pre><?php print_r($var);?></pre></div>
+    <div class="col-md-4"><pre><?php var_dump($var);?></pre></div>
+</div>
+
 <?php $var = "";?>
 <div class="row">
     <div class="col-md-4"><pre><?php echo $var;?></pre></div>
