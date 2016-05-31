@@ -1,27 +1,26 @@
 # cursojunio2016
 
-Documentación
-=============
+## Documentación
 
-http://www.php.net/
-http://www.w3schools.com/
+- [php.net](http://www.php.net/)
+- [w3schools](http://www.w3schools.com/)
 
 
-Ejemplos
-========
+## Ejemplos
 
-01_holamundo.php
+
+### 01_holamundo.php
 
 ejecución php por comando
 aperturay cierre de php (ejecutar sin cierre y ejecutar sin apertura)
 
 
-02_argumentos.php
+### 02_argumentos.php
 
 llamada por consola con argumentos
 variables empiezan con $
 
-03_argumentos.php
+### 03_argumentos.php
 
 acceso arrays
 No se indica tipo de dato (string, int...), php intenta funcionar como sea.
@@ -31,19 +30,19 @@ Tipos de errores: Notice, Error, Deprecated...
 Cambiar código para producir Fatal Error => php se detiene
 
 
-04_html.php
+### 04_html.php
 
 Propósito de php => páginas html
 
 
-05_html.php
+### 05_html.php
 
 código fuera de etiquetas php
 
 
 
 
-10_html.php
+### 10_html.php
 
 Ejecutar php en servidor web (desde navegador).
 Notice y otros errores => muchas veces están ocultos
@@ -51,7 +50,7 @@ Más adelante vemos paso de variables
 Más adelante vemos display_errors
 
 
-11_variaspaginas
+### 11_variaspaginas
 
 Por defecto se ejecuta index.php o index.html...
 URL (Uniform Resource Locator)
@@ -65,12 +64,15 @@ Consulta: ?nombre=carlos&apellido=herrera
 
 
 
-12_variaspaginas.php
+### 12_variaspaginas.php
 
 includes/requires
 
 
 
+
+
+## Conceptos pendientes
 
 La memoria de php se destruye tras cada ejecución. No hay persistencia de variables. Soluciones:
 Base de datos
@@ -78,11 +80,11 @@ Ficheros
 Sesión
 Cookies
 
-Herramientas de desarrollo
+### Herramientas de desarrollo
 methods: GET, POST, PUT, DELETE
 
 
-Métodos de php para depuración:
+### Métodos de php para depuración:
 echo
 print_r
 var_dump
