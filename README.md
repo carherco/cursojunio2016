@@ -93,8 +93,11 @@ el archivo llamado, desde ese punto en adelante.
 
 [Diferencia entre include y require](http://php.net/manual/es/function.require.php)
 
+- Sesión
 
-### Métodos de php para depuración:
+
+
+## Métodos de php para depuración:
 - echo
 - print_r
 - var_dump

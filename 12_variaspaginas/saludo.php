@@ -1,15 +1,21 @@
 <?php $title = "Ejemplo 12 - Saludo"; ?>
 
 <?php 
-$nombre = $_REQUEST['nombre'];
-$apellido = $_REQUEST['apellido'];
+session_start();
+if(isset($_REQUEST['nombre'])) {
+    $_SESSION['nombre'] = $_REQUEST['nombre'];
+}
+
+if(isset($_REQUEST['apellido'])) {
+    $_SESSION['apellido'] = $_REQUEST['apellido'];
+}
 ?> 
 
 <?php
 include 'plantillas/cabecera.php';
 ?>
 
-<h1>Hola <?php echo $nombre." ".$apellido ?>, bienvenid@.</h1>
+<h1>Hola <?php echo $_SESSION['nombre']." ".$_SESSION['apellido'] ?>, bienvenid@.</h1>
 
 <p>¿Qué operación desea realizar?</p>
 
