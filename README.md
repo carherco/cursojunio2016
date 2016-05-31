@@ -96,6 +96,9 @@ el archivo llamado, desde ese punto en adelante.
 - Sesión
 
 
+### 21_depuracion.php
+
+Hay un error al hacer la resta.
 
 ## Métodos de php para depuración:
 - echo
@@ -103,3 +106,12 @@ el archivo llamado, desde ese punto en adelante.
 - var_dump
 - exit
 - console.log (para javascript en el navegador)
+
+## Depuración en producción
+
+En producción no se debe andar poniendo echo, print_r, exit...
+
+- Xdebug
+- Zend Debugger (con eclipse)
+
+
