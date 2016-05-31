@@ -98,7 +98,7 @@ el archivo llamado, desde ese punto en adelante.
 
 ### 21_depuracion
 
-Hay un error al hacer la resta.
+Hay un error al hacer la resta; hay que encontrarlo y corregirlo.
 
 #### Métodos de php para depuración (21_depuracion/comparativa.php):
 - echo
