@@ -4,6 +4,12 @@ include 'plantillas/cabecera.php';
 
 <h1>echo vs print_r vs var_dump</h1>
 
+<div class="row">
+    <div class="col-md-4">echo $var;</div>
+    <div class="col-md-4">print_r($var);</div>
+    <div class="col-md-4">var_dump($var);</div>
+</div>
+
 <?php $var = "texto";?>
 <div class="row">
     <div class="col-md-4"><pre><?php echo $var;?></pre></div>
