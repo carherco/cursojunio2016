@@ -45,6 +45,7 @@
 ### 10_html.php
 
 - Ejecutar php en servidor web (desde navegador).
+- Mostrar código fuente en navegador y comparar con el código del servidor.
 - Notice y otros errores => muchas veces están ocultos
 - Más adelante vemos paso de variables
 - Más adelante vemos display_errors
@@ -54,11 +55,11 @@
 
 - Por defecto se ejecuta index.php o index.html...
 - URL (Uniform Resource Locator)
-- Esquema o protocolo: http:
-- Autoridad o máquina: 127.0.0.1
-- Puerto: :80
-- Ruta: /11_variaspaginas/index.php
-- Consulta: ?nombre=carlos&apellido=herrera
+  - Esquema o protocolo: http:
+  - Autoridad o máquina: 127.0.0.1
+  - Puerto: :80
+  - Ruta: /11_variaspaginas/index.php
+  - Consulta: ?nombre=carlos&apellido=herrera
 
 
 
@@ -69,6 +70,7 @@
 - includes/requires
 
 
+## Herramientas de desarrollo
 
 
 
@@ -79,8 +81,6 @@
 - Ficheros
 - Sesión
 - Cookies
-
-### Herramientas de desarrollo
 - methods: GET, POST, PUT, DELETE
 
 
