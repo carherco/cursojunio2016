@@ -1,11 +1,9 @@
-<html>
+<?php $title = "Ejemplo 11 - Restar"; ?>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Ejemplo 11 - Restar</title>
-</head>
+<?php
+include 'plantillas/cabecera.php';
+?>
 
-<body>
 <h1>Bienvenido a nuestra web.</h1>
 
 <p>Escriba la operación que desea realizar</p>
@@ -19,6 +17,6 @@
 
 <a href="saludo.php">Volver</a>
 
-</body>
-
-</html>
+<?php
+include 'plantillas/pie.php';
+?>

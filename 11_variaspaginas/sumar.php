@@ -10,14 +10,14 @@
 
 <p>Escriba la operación que desea realizar</p>
 
-<form method="GET" action="resultado-suma.php">
+<form method="POST" action="resultado-suma.php">
     <input type="number" name="num1"/>
     +
     <input type="number" name="num2"/>
     <button type="submit">Calcular</button>
 </form>
 
-<a href="index.php">Volver</a>
+<a href="saludo.php">Volver</a>
 
 </body>
 

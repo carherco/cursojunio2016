@@ -1,11 +1,9 @@
-<html>
+<?php $title = "Ejemplo 12 - Inicio"; ?>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Ejemplo 11 - Inicio</title>
-</head>
+<?php
+include 'plantillas/cabecera.php';
+?>
 
-<body>
 <h1>Bienvenid@ a nuestra web.</h1>
 
 <form method="GET" action="saludo.php">
@@ -15,6 +13,6 @@
     <button type="submit">Continuar</button>
 </form>
 
-</body>
-
-</html>
+<?php
+include 'plantillas/pie.php';
+?>
