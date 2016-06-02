@@ -39,7 +39,12 @@
 
 - código fuera de etiquetas php
 
-
+### 06_tiposapertura.php
+- <?php echo $var ?>
+- <? echo $var ?> (necesita habilitar short_open_tag)
+- <script language="php">echo $var</script> (eliminada en PHP 7.0.0.)
+- <% echo $var %> (eliminada en PHP 7.0.0.)
+- <?= $var ?> (a partir de php 5.4.0)
 
 
 ### 10_html.php
@@ -69,6 +74,8 @@ La memoria de php se destruye tras cada ejecución. No hay persistencia de varia
 A saludo.php se puede llegar desde index.php, desde suma.php o resta.php o incluso se puede llegar escribiendo a mano la url.
 El script saludo.php se ejecuta sin "historia", no conoce el camino tomado hasta llegar a él.
 
+
+#### Explicar request y response
 
 - Paso de variables en peticiones POST.
 Uso de las herramientas de desarrrollo de los navegadores.
@@ -108,12 +115,32 @@ Hay un error al hacer la resta; hay que encontrarlo y corregirlo.
 - var_dump
 - exit
 - console.log (para javascript en el navegador)
+- instanceof ()
 
 ## Depuración en producción
 
 En producción no se debe andar poniendo echo, print_r, exit...
 
-- Xdebug
-- Zend Debugger (con eclipse)
+- phpinfo()
+- [Xdebug](https://xdebug.org/docs/)
+- [Z-Ray (antes Zend Debugger)] (https://www.zend.com/en/products/server/z-ray)
 
 
+### 22_superglobals
+
+- [Variables superglobales](http://php.net/manual/es/language.variables.superglobals.php)
+
+Algunas variables predefinidas en PHP son "superglobales", lo que significa que
+están disponibles en todos los ámbitos a lo largo del script.
+
+- $GLOBALS
+- $_SERVER
+- $_GET
+- $_POST
+- $_FILES
+- $_COOKIE
+- $_SESSION
+- $_REQUEST
+- $_ENV
+
+### 23_trycatch
