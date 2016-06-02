@@ -111,8 +111,9 @@ Hay un error al hacer la resta; hay que encontrarlo y corregirlo.
 
 #### Métodos de php para depuración (21_depuracion/comparativa.php):
 - echo
-- print_r
-- var_dump
+- print_r()
+- var_dump()
+- var_export()
 - exit
 - console.log (para javascript en el navegador)
 - instanceof ()
