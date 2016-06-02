@@ -80,6 +80,8 @@ Uso de las herramientas de desarrrollo de los navegadores.
   - Sesión
   - Cookies
 
+- Siguiendo con el tema de las URL, acceder por ejemplo a 21_depuracion/plantillas/cabecera.php
+
 
 
 ### 12_variaspaginas

@@ -2,4 +2,4 @@
 
 $nombre = $argv[1];
 
-echo "Hola ".$nombre.", ¡Bienvenido!";
+echo "Hola ".$nombre.", ¡Bienvenid@!";

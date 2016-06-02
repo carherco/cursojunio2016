@@ -8,7 +8,7 @@ $nombre = $argv[1];
 </head>
 
 <body>
-<h1>¡Bienvenido <?php echo $nombre?>!</h1>
+<h1>¡Bienvenid@ <?php echo $nombre?>!</h1>
 </body>
 
 </html>
