@@ -119,7 +119,7 @@ Hay un error al hacer la resta; hay que encontrarlo y corregirlo.
 - var_export()
 - exit
 - console.log (para javascript en el navegador)
-- instanceof ()
+- instanceof
 
 #### Depuración en producción
 
