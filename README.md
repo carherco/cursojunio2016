@@ -6,7 +6,7 @@
 - [w3schools](http://www.w3schools.com/)
 
 
-## Ejemplos
+## 0 - PHP en consola
 
 
 ### 01_holamundo.php
@@ -46,6 +46,7 @@
 - <% echo $var %> (eliminada en PHP 7.0.0.)
 - <?= $var ?> (a partir de php 5.4.0)
 
+## 1 - PHP en servidor web
 
 ### 10_html.php
 
@@ -105,6 +106,8 @@ el archivo llamado, desde ese punto en adelante.
 - Sesión
 
 
+## 2 - Depuración de aplicaciones PHP
+
 ### 21_depuracion
 
 Hay un error al hacer la resta; hay que encontrarlo y corregirlo.
@@ -118,13 +121,32 @@ Hay un error al hacer la resta; hay que encontrarlo y corregirlo.
 - console.log (para javascript en el navegador)
 - instanceof ()
 
-## Depuración en producción
+#### Depuración en producción
 
 En producción no se debe andar poniendo echo, print_r, exit...
 
 - phpinfo()
 - [Xdebug](https://xdebug.org/docs/)
 - [Z-Ray (antes Zend Debugger)] (https://www.zend.com/en/products/server/z-ray)
+
+#### Configuración del web server (php.ini)
+
+Se puede la ubicacón del fichero php.ini en el phpinfo()
+
+ - display_errors (On/Off)
+ - error_reporting (E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED)
+
+[error_reporting](http://php.net/manual/es/errorfunc.configuration.php#ini.error-reporting)
+
+Volver a ejecutar 10_html.php
+
+
+#### Ficheros de log
+
+Se puede la ubicacón del fichero de log en el phpinfo(), en la variable *APACHE_LOG_DIR*
+
+ - access_log
+ - error_log
 
 
 ### 22_superglobals
