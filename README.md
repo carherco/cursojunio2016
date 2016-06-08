@@ -144,4 +144,53 @@ están disponibles en todos los ámbitos a lo largo del script.
 - $_REQUEST
 - $_ENV
 
+http://www.w3schools.com/php/php_superglobals.asp
+
 ### 23_trycatch
+
+
+- Comentarios
+  - //
+  - # 
+  - /* */ ($x = 5 /* + 15 */ + 5;)
+
+- Sensibilidad a mayúsculas/minúsculas
+  - In PHP, all keywords (e.g. if, else, while, echo, etc.), classes, functions, and user-defined functions are NOT case-sensitive.
+  - However; all variable names are case-sensitive. ($color, $COLOR, y $coLOR son diferentes)
+
+
+Rules for PHP variables:
+
+A variable starts with the $ sign, followed by the name of the variable
+A variable name must start with a letter or the underscore character. A variable name cannot start with a number
+A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+Variable names are case-sensitive ($age and $AGE are two different variables)
+
+Todos los ejemplos de aquí son interesantes:
+http://www.w3schools.com/php/php_variables.asp
+
+[PHP Data Types](http://www.w3schools.com/php/php_datatypes.asp)
+
+- Constantes: define(name, value, case-insensitive)
+  - Las constantes son de ámbito global
+
+[Operadores](http://www.w3schools.com/php/php_operators.asp)
+
+- bucles
+  - foreach
+
+- parámetros en funciones (valor/referencia, parámetros opcionales)
+  - valor/referencia
+  - parámetros opcionales
+  - No pueden existir dos funciones con el mismo nombre en el mismo ámbito 
+
+- Clases
+  - Alternativas para declarar constructores
+  - __toString()
+  - herencia (extends)
+  - interfaces (interface)
+  - clases abstractas
+
+
+
+- Validación en cliente/validación en servidor
