@@ -6,6 +6,7 @@
         <tr>
             <th>Id</th>
             <th>Nombre</th>
+            <th></th>
         </tr>
     </thead>
     
@@ -14,6 +15,11 @@
         <tr>
             <td><?php echo $fila['id']?></td>
             <td><?php echo $fila['nombre']?></td>
+            <td>
+                <a href="verLista.php?id=<?php echo $fila['id']?>" class="btn btn-default">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                </a>
+            </td>
         </tr>
         <?php endforeach;?>
     </tbody>

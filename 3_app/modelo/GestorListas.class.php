@@ -83,6 +83,27 @@ class GestorListas {
         return $datos;
     }
     
+    public function anyadirElementoLista($idlista, $nombre) {
+        $sql = "INSERT INTO elemento (id_lista, nombre) VALUES ($idlista,'$nombre')";
+        $this->orm->insert($sql);
+    }
+    
+    public function borrarElementoLista($idelemento) {
+        $sql = "DELETE FROM elemento WHERE id=".$idelemento;
+        $this->orm->delete($sql);
+    }
+    
+    public function tacharElementoLista($id) {
+        $sql = "UPDATE elemento set realizado=1 where id=" . $id;
+        $this->orm->execute_sql($sql);
+    }
+    
+    public function destacharElementoLista($id) {
+        $sql = "UPDATE elemento set realizado=0 where id=" . $id;
+        $this->orm->execute_sql($sql);
+    }
+    
+    
     public function close() {
         $this->orm->close();
     }

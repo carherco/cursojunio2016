@@ -12,7 +12,6 @@ $elementos = $gestor->dameElementosLista($idlista);
 
 
 
-
 //Vistas
 $title = $lista->getNombre();
 include 'plantillas/generales/cabecera.html.php';

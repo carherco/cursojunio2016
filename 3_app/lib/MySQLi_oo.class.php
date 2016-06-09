@@ -57,11 +57,7 @@ class ORM_MySQLi_OO implements ORM {
             
             $datos = array();
             while($row = $result->fetch_assoc()) {
-                $fila = array();
-                $fila['id'] = $row["id"];
-                $fila['nombre'] = $row["nombre"];
-                
-                array_push($datos,$fila);
+                array_push($datos,$row);
             } 
             return $datos;
 
