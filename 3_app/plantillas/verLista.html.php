@@ -1,4 +1,4 @@
-<h1>Listado de listas</h1>
+<h1>Listado de elementos de la lista <?php echo $lista->getNombre()?></h1>
 
 <table class="table table-striped">
     

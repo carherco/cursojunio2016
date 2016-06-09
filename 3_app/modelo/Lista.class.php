@@ -2,8 +2,6 @@
 
 class Lista {
     
-    protected $orm;
-    
     protected $id;
     protected $nombre;
 
@@ -12,51 +10,36 @@ class Lista {
      * @param ORM $orm
      * @param string $nombre
      */
-    public function __construct(ORM $orm, string $nombre) {
-        $this->orm = $orm;
+    public function __construct() {
         
-        $sql = "INSERT INTO lista (nombre) VALUES ($nombre)";
-        $id = $this->orm->insert($sql);
-        
+    }
+    
+    public function save() {
+        $gestor = new GestorListas();
+        $gestor->guardar($this);
+    }
+    
+    function setId($id) {
         $this->id = $id;
+        return $this;
+    }
+
+    function getId() {
+        return $this->id;
+    }
+    
+    function setNombre($nombre) {
         $this->nombre = $nombre;
+        return $this;
     }
 
-    public function dameListas() {
-        $sql = "select * from lista order by nombre";
-        $result = mysql_query($sql, $this->conexion);
-        $alimentos = array();
-        while ($row = mysql_fetch_assoc($result)) {
-            $alimentos[] = $row;
-        }
-        return $alimentos;
+    function getNombre() {
+        return $this->nombre;
     }
 
-    public function buscarListasPorNombre(string $nombre) {
-        $sql = "select * from lista where nombre like '%" . $nombre . "%'";
-        $result = mysql_query($sql, $this->conexion);
-        $alimentos = array();
-        while ($row = mysql_fetch_assoc($result)) {
-            $alimentos[] = $row;
-        }
-        return $alimentos;
+    function getElementos() {
+        return $this->nombre;
     }
 
-    /**
-     * 
-     * @param int $id
-     * @return type
-     */
-    public function dameLista(int $id) {
-        $sql = "select * from lista where id=" . $id;
-        $datos = $this->orm->select($sql);
-        
-        
-        
-        $result = mysql_query($sql, $this->conexion);
-        $alimentos = array();
-        $row = mysql_fetch_assoc($result);
-        return $row;
-    }
 
 }

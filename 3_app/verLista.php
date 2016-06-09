@@ -3,18 +3,22 @@
 include 'modelo/GestorListas.class.php';
 
 //Recogida de parámetros
-
+$idlista = $_REQUEST['id'];
 
 //Llamada al servicio
 $gestor = new GestorListas();
-$listas = $gestor->dameListas();
+$lista = $gestor->dameLista($idlista);
+$elementos = $gestor->dameElementosLista($idlista);
+
+
 
 
 //Vistas
-$title = 'Listado';
+$title = $lista->getNombre();
 include 'plantillas/generales/cabecera.html.php';
 
-$datostabla = $listas;
-include 'plantillas/index.html.php';
+//$lista
+$datostabla = $elementos;
+include 'plantillas/verLista.html.php';
 
 include 'plantillas/generales/pie.html.php';
