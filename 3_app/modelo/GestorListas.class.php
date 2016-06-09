@@ -40,17 +40,7 @@ class GestorListas {
 
         return $datos;
     }
-
-    public function buscarListasPorNombre($nombre) {
-        $sql = "select * from lista where nombre like '%" . $nombre . "%'";
-        $result = mysql_query($sql, $this->conexion);
-        $alimentos = array();
-        while ($row = mysql_fetch_assoc($result)) {
-            $alimentos[] = $row;
-        }
-        return $alimentos;
-    }
-
+    
     /**
      * 
      * @param int $id
@@ -70,6 +60,22 @@ class GestorListas {
         }
 
     }
+
+    public function buscarListaPorElemento($idelemento) {
+        //$sql = "select * from lista where nombre like '%" . $nombre . "%'";
+        $sql = "select * from elemento where id=$idelemento";
+        $datos = $this->orm->select($sql);
+        
+        if(isset($datos) && count($datos) === 1) {
+            $idlista = $datos[0]['id_lista'];
+            $lista = $this->dameLista($idlista);
+            return $lista;
+        } else {
+            return null;
+        }
+    }
+
+    
     
     /**
      * 
