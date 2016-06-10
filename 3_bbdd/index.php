@@ -48,9 +48,9 @@ if (mysqli_query($conn, $sql)) {
 $sql = "SELECT * FROM lista";
 $result = mysqli_query($conn, $sql);
 
-if (mysqli_num_rows($result) > 0) {
-
-    while($row = mysqli_fetch_assoc($result)) {
+if (count($result) > 0) {
+        
+    foreach ($result as $row) {
         $id = $row["id"];
         $nombre = $row["nombre"];
         ......

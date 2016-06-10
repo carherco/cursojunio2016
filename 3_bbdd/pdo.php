@@ -2,42 +2,44 @@
 include 'plantillas/cabecera.php';
 ?>
 
-<h1>echo vs print_r vs var_dump</h1>
+<h1>PDO</h1>
 
 <?php
+include 'config.php';
 // pdo //
 // === //
 
 try {
-    $conn = new PDO("mysql:host=$servername;dbname=myDB", $username, $password);
+    $conn = new PDO("mysql:host=".SERVERNAME.";dbname=".DBNAME, USERNAME, PASSWORD);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected successfully"; 
+    echo "Connected successfully</br>"; 
 
     //Ejecutar SQL
     $sql = "INSERT INTO lista (nombre)
-    VALUES ('Nombre de la lista')";
+    VALUES ('Lista creada con pdo')";
 
     // use exec() because no results are returned
     $conn->exec($sql);
-    echo "New record created successfully";
+    echo "New record created successfully</br>";
 
     //Ejecutar SQL para obtener datos (SELECT)
     $sql = "SELECT * FROM lista";
     $result = $conn->query($sql);
 
-    if ($result->num_rows > 0) {
+    if (count($result) > 0) {
         
-        while($row = $result->fetch_assoc()) {
+        foreach ($result as $row) {
             $id = $row["id"];
             $nombre = $row["nombre"];
+            echo "<div>Id: $id - Nombre: $nombre</div>";
         }
 
     } else {
-        echo "0 results";
+        echo "0 results".PHP_EOL;
     }
 } catch(PDOException $e) {
-    echo "Error: " . $e->getMessage();
+    echo "Ha ocurrido un error: " . $e->getMessage()."</br>";
 }
 
 
