@@ -177,16 +177,15 @@ http://www.w3schools.com/php/php_superglobals.asp
   - /* */ ($x = 5 /* + 15 */ + 5;)
 
 - Sensibilidad a mayúsculas/minúsculas
-  - In PHP, all keywords (e.g. if, else, while, echo, etc.), classes, functions, and user-defined functions are NOT case-sensitive.
-  - However; all variable names are case-sensitive. ($color, $COLOR, y $coLOR son diferentes)
+  - Los nombres de las variables son case-sensitive. ($color, $COLOR, y $coLOR son diferentes)
+  - Todo lo demás, no: keywords (e.g. if, else, while, echo, etc.), clases, funciones...
 
 
-Rules for PHP variables:
-
-A variable starts with the $ sign, followed by the name of the variable
-A variable name must start with a letter or the underscore character. A variable name cannot start with a number
-A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
-Variable names are case-sensitive ($age and $AGE are two different variables)
+Reglas para los nombres de las variables:
+  - Siempre empiezan con $
+  - Deben empezar con una letra o un guión bajo. No pueden empezar con un número.
+  - Solamente pueden contener caracteres alfanuméricos y guiones bajos (A-z, 0-9, y _ )
+  - Son case-sensitive ($edad y $EDAD son diferentes)
 
 Todos los ejemplos de aquí son interesantes:
 http://www.w3schools.com/php/php_variables.asp
@@ -212,7 +211,5 @@ http://www.w3schools.com/php/php_variables.asp
   - herencia (extends)
   - interfaces (interface)
   - clases abstractas
-
-
 
 - Validación en cliente/validación en servidor
