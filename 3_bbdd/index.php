@@ -7,13 +7,13 @@ include 'plantillas/cabecera.php';
 
 <form class="form-inline">
     <label class="checkbox-inline">
-        <input type="checkbox" id="check-mysqli_f" value="mysqli_f" checked="checked"> mysqli funcional
+        <input type="checkbox" id="check-mysqli_f" class="checkbox" value="mysqli_f" checked="checked"> mysqli funcional
     </label>
     <label class="checkbox-inline">
-      <input type="checkbox" id="check-mysqli_oo" value="mysqli_oo" checked="checked"> mysqli orientado a objetos
+      <input type="checkbox" id="check-mysqli_oo" class="checkbox" value="mysqli_oo" checked="checked"> mysqli orientado a objetos
     </label>
     <label class="checkbox-inline">
-      <input type="checkbox" id="check-pdo" value="pdo" checked="checked"> pdo
+      <input type="checkbox" id="check-pdo" class="checkbox" value="pdo" checked="checked"> pdo
     </label>
 </form>
 
