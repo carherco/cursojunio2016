@@ -195,12 +195,12 @@ http://www.w3schools.com/php/php_variables.asp
 - Constantes: define(name, value, case-insensitive)
   - Las constantes son de ámbito global
 
-[Operadores](http://www.w3schools.com/php/php_operators.asp)
+- [Operadores](http://www.w3schools.com/php/php_operators.asp)
 
 - bucles
   - foreach
 
-- parámetros en funciones (valor/referencia, parámetros opcionales)
+- Parámetros en funciones (valor/referencia, parámetros opcionales)
   - valor/referencia
   - parámetros opcionales
   - No pueden existir dos funciones con el mismo nombre en el mismo ámbito 

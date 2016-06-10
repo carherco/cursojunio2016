@@ -1,0 +1,4 @@
+SERVERNAME:localhost
+DBNAME:todo
+USERNAME:root
+PASSWORD:root
