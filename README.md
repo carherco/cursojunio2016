@@ -171,6 +171,9 @@ http://www.w3schools.com/php/php_superglobals.asp
 ### 23_trycatch
 
 
+
+### Otros conceptos básicos
+
 - Comentarios
   - //
   - # 
@@ -213,3 +216,18 @@ http://www.w3schools.com/php/php_variables.asp
   - clases abstractas
 
 - Validación en cliente/validación en servidor
+
+
+## 3 - Conexión a base de datos
+
+- Librerias incluidas en php
+  - mysqli funcional
+  - mysqli orientado a objetos
+  - pdo
+
+- Archivo de configuracion
+
+- Visibilidad de los archivos de la aplicación
+
+
+## 4 - Ejemplo de aplicación
