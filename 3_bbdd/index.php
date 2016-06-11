@@ -21,7 +21,7 @@ include 'plantillas/cabecera.php';
 <?php $var = "texto";?>
 <div class="row">
     
-<div id="codigo-mysqli_f" class="codigo col-md-6"><pre>
+<div id="codigo-mysqli_f" class="codigo"><pre>
 // mysqli funcional //
 // ================ //
 
@@ -68,7 +68,7 @@ mysqli_close($conn);
     
     
     
-<div id="codigo-mysqli_oo" class="codigo col-md-6"><pre>
+<div id="codigo-mysqli_oo" class="codigo"><pre>
 // mysqli orientado a objetos //
 // ========================== //
 
@@ -117,7 +117,7 @@ $conn->close();
     
     
     
-<div id="codigo-pdo" class="codigo col-md-6"><pre>
+<div id="codigo-pdo" class="codigo"><pre>
 // pdo //
 // === //
 

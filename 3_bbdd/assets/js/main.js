@@ -24,20 +24,32 @@ var resize = function(){
             $('.codigo').removeClass('col-md-4');
             $('.codigo').removeClass('col-md-6');
             $('.codigo').addClass('col-md-9');
+            $('.codigo').removeClass('col-sm-4');
+            $('.codigo').removeClass('col-sm-6');
+            $('.codigo').addClass('col-sm-9');
             break;
         case 2:
             $('.codigo').removeClass('col-md-4');
             $('.codigo').removeClass('col-md-9');
             $('.codigo').addClass('col-md-6');
+            $('.codigo').removeClass('col-sm-4');
+            $('.codigo').removeClass('col-sm-9');
+            $('.codigo').addClass('col-sm-6');
             break;
         case 3:
             $('.codigo').removeClass('col-md-6');
             $('.codigo').removeClass('col-md-9');
             $('.codigo').addClass('col-md-4');
+            $('.codigo').removeClass('col-sm-6');
+            $('.codigo').removeClass('col-sm-9');
+            $('.codigo').addClass('col-sm-4');
             break;
         default:
             $('.codigo').removeClass('col-md-6');
             $('.codigo').removeClass('col-md-9');
             $('.codigo').addClass('col-md-4');
+            $('.codigo').removeClass('col-sm-6');
+            $('.codigo').removeClass('col-sm-9');
+            $('.codigo').addClass('col-sm-4');
     }
 };
